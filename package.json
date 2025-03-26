@@ -13,5 +13,5 @@
             "tests/*"
         ]
     },
-    "private": true,
+    "private": true
 }
