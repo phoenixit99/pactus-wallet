@@ -10,7 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@pactus-wallet/wallet": "*",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.72",
     "bip39": "^3.1.0",
