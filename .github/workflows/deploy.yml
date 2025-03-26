@@ -55,10 +55,10 @@ jobs:
       - name: Build and link web app
         run: cd apps/web && yarn add file:${{ github.workspace }}/packages/wallet && yarn build
 
-    #   - name: Deploy
-    #     uses: peaceiris/actions-gh-pages@v4
-    #     with:
-    #       github_token: ${{ secrets.GITHUB_TOKEN }}
-    #       publish_branch: web
-    #       publish_dir: ./apps/web/out
-    #       cname: ${{ env.CNAME }} 
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GH_PAT}}
+          publish_branch: web
+          publish_dir: ./apps/web/out
+          cname: ${{ env.CNAME }} 
